@@ -37,4 +37,10 @@ public class ProductsController {
         return product.getProductId().toString();
     }
 
+    @RequestMapping(value = "/removeproduct", method = RequestMethod.POST)
+    @ResponseBody
+    public String removeProduct(@RequestParam Long Id){
+        productRepository.delete(Id);
+        return Id.toString();
+    }
 }

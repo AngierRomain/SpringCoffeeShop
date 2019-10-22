@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Spring Coffee Shop</title>
+    <link rel="stylesheet" href="/bootstrap.min.css" media="screen"/>
+    <style>
+        .navigation-order{
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Accueil</a>
+            <ul class="nav navbar-nav">
+                <li><a href="/products">Gestion des produits</a></li>
+                <li><a href="/orders">Gestion des commandes</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-lg-offset-0">
+            <a href="/products"><img src="/logo.png" style="width:200%;"/></a>
+        </div>
+    </div>
+    <div class="page-header" id="banner">
+        <div class="row">
+            <div class="col-lg-8 col-md-7 col-sm-6 col-lg-offset-0">
+                <h1>Bienvenue !</h1>
+                <p>Découvrez nos différents cafés d'exception fraîchement torréfiés & nos thés</p>
+                <br>
+                <h3>Nos produits: </h3>
+                <img src="/produit1.png"/><img src="/produit2.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
